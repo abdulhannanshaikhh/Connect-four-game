@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Body CSS*/
+body {
+    display: grid;
+    place-items: center;
+}
+
+/*Main Heading CSS*/
+h1 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+/*Turn Indicator CSS*/
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Board CSS*/
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 630px;
+    background-color: rgb(47, 206, 81);
+}
+
+ul {
+    display: grid;
+    place-items: center;
+
+}
+
+ul p {
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: rgb(232, 225, 225);
+}
+
+/*Hover CSS*/
+ul:hover {
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(115, 140, 210);
+}
+
+/*Device Media Queries*/
+@media(max-width:700px) {
+    .board {
+        width: 500px;
+    }
+
+    ul p {
+        width: 55px;
+        height: 55px;
+
+    }
+
+}
+
+@media(max-width:520px) {
+    .board {
+        width: 400px;
+    }
+
+    ul p {
+        width: 40px;
+        height: 40px;
+
+    }
+
+}
+
+@media(max-width:420px) {
+    .board {
+        width: 320px;
+    }
+
+    ul p {
+        width: 30px;
+        height: 30px;
+
+    }
+
+}
